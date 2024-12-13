@@ -1,0 +1,112 @@
+/* General */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Fondo claro */
+    color: #333; /* Texto en color gris oscuro */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+}
+
+/* Header */
+header {
+    background-color: #FF7F32; /* Naranja */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Main Content */
+main {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Divide las secciones horizontalmente */
+    gap: 10px;
+    flex-grow: 1;
+}
+
+/* Sección 1: Imagen con párrafo */
+.section-with-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-with-text .image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.image-with-text p {
+    max-width: 350px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Sección 2: Solo imagen */
+.section-image-only {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-only .image {
+        height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40; /* Gris oscuro */
+    color: white;
+    padding: 20px 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Cambiado a columna */
+    align-items: center; /* Centrado horizontal */
+    justify-content: center; /* Centrado vertical */
+    text-align: center; /* Centrado del texto */
+    box-sizing: border-box;
+}
+
+footer .terms-section,
+footer .contacts-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Asegura que los enlaces estén centrados */
+    width: 100%; /* Asegura que el contenido ocupe todo el ancho disponible */
+    margin-bottom: 10px;
+}
+
+footer .terms-section a,
+footer .contacts-section a {
+    color: #FF7F32; /* Naranja */
+    text-decoration: none;
+    font-size: 1em;
+}
+
+footer .terms-section a:hover,
+footer .contacts-section a:hover {
+    text-decoration: underline;
+}
+

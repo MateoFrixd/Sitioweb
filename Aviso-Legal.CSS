@@ -1,0 +1,70 @@
+/* Asegurarse de que todo el contenido ocupe el 100% del ancho y alto */
+html, body {
+    height: 100%; /* Ocupa toda la altura de la pantalla */
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    display: flex;
+    flex-direction: column; /* Para que el footer esté al final */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* Fondo blanco */
+    color: #333; /* Texto en negro */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Para que el footer se quede abajo */
+}
+
+header {
+    background-color:#ff7f32; /* Verde */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+}
+
+main {
+    background-color: white; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Permite que main ocupe todo el espacio disponible entre header y footer */
+    margin-bottom: 0;
+}
+
+/* Cambiar los títulos h2 a naranja */
+h1, h2 {
+    color: #ff7f32; /* Naranja */
+}
+
+h3 {
+    color: #333; /* Negro */
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333; /* Negro */
+}
+
+footer {
+    background-color: #343a40; /* Fondo negro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
